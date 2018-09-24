@@ -2,9 +2,7 @@
 
 ## Outils 
 
-* Html 5
+* Html
 * CSS
-* Bootstrap 
-* PHP
-* Javascript
-* Workbench
+* Bootstrap
+* React Native
