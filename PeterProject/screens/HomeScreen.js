@@ -42,8 +42,13 @@ export default class HomeScreen extends React.Component {
             </View>
 
             <Text style={styles.getStartedText}>
-              Change this text and your app will automatically reload.
+              Change this text and your app will automatically reload. 
             </Text>
+
+	    <Text style={styles.getStartedText}>
+	      Mery est une déesse et Marco, Stéphane, Guillame K. et Liam le savent!!! Ils vénèrent tous Mery.
+	    </Text>
+
           </View>
 
           <View style={styles.helpContainer}>
