@@ -1,6 +1,6 @@
 # Degroof-Petercam
 
-## Bienvenue sur notre appli
+## Bienvenue sur notre Peter Project
 
 Notre appli à pour but de connecter les compétences des employés de Petercam avec des projet de mentoring, coaching et bénévola
 
