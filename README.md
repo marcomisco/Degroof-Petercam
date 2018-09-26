@@ -14,6 +14,7 @@ Notre appli à pour but de connecter les compétences des employés de Petercam 
 
 ## Khaban
 
+https://github.com/wilfort/Degroof-Petercam/projects/2
 
 
 ##  Outils 
