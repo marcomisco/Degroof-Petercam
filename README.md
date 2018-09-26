@@ -6,7 +6,7 @@ Notre appli à pour but de connecter les compétences des employés de Petercam 
 
 ## TEAM
 
-* [**Lamri Mery**](https://github.com/Lamri-Mery)
+* [**Mery Lamri**](https://github.com/Lamri-Mery)
 * [**Stéphane Wilfort**](https://github.com/wilfort)
 * [**Liam Carlier**](https://github.com/CarlierLiam)
 * [**Marco Bove**](https://github.com/marcomisco)
