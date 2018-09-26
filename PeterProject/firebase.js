@@ -13,3 +13,15 @@ var config = {
 const base = firebase.initializeApp(config);
 
 export default base;
+
+
+componentWillMount(){
+	config = {
+	    apiKey:,
+	    authDomain:,
+	    databaseURL: ,
+	    storageBucket: ,
+	    messagingSenderId:
+		};
+		firebase.initializeApp(config);
+	}
