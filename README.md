@@ -12,6 +12,8 @@ Notre appli à pour but de connecter les compétences des employés de Petercam 
 * [**Marco Bove**](https://github.com/marcomisco)
 * [**Guillaume Kreit**](https://github.com/Guillaume-Kreit)
 
+## Khaban
+
 
 
 ##  Outils 
