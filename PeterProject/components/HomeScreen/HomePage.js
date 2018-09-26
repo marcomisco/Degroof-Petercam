@@ -1,8 +1,16 @@
 import React from "react";
 import { StatusBar } from "react-native";
+import  base  from '../../firebase'
 import { Container, Header, Title, Left, Icon, Right, Button, Body, Content,Text, Card, CardItem } from "native-base";
 export default class HomeScreen extends React.Component {
+  state = { currentUser: null }
+  componentDidMount() {
+    const { currentUser } = base.auth().currentUser.uid
+    this.setState( {currentUser})
+    
+}
   render() {
+    const { currentUser } = this.state
     return (
       <Container>
         <Header>
@@ -22,7 +30,7 @@ export default class HomeScreen extends React.Component {
           <Card>
             <CardItem>
               <Body>
-                <Text>Chat App to talk some awesome people!</Text>
+                <Text>Chat App to talk some awesome people!  {currentUser}</Text>
               </Body>
             </CardItem>
           </Card>
