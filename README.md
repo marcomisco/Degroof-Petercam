@@ -12,6 +12,10 @@ Notre appli à pour but de connecter les compétences des employés de Petercam 
 * [**Marco Bove**](https://github.com/marcomisco)
 * [**Guillaume Kreit**](https://github.com/Guillaume-Kreit)
 
+## Durée de devellopement
+
+Du lundi 24/09/18 au mercredi 26/09/18
+
 ## Khaban
 
 https://github.com/wilfort/Degroof-Petercam/projects/2
@@ -19,7 +23,7 @@ https://github.com/wilfort/Degroof-Petercam/projects/2
 
 ##  Outils 
 
-* Html
+* HTML
 * CSS
 * Javascript
 * Bootstrap
