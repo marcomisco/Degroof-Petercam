@@ -1,31 +1,29 @@
-import React from 'react';
-import { Platform, StatusBar, StyleSheet, View } from 'react-native';
-import { AppLoading, Asset, Font, Icon } from 'expo';
-import AppNavigator from './navigation/AppNavigator';
-
-export default class App extends React.Component {
-  state = {
-    isLoadingComplete: false,
-  };
-
-  render() {
-    if (!this.state.isLoadingComplete && !this.props.skipLoadingScreen) {
-      return (
-        <AppLoading
-          startAsync={this._loadResourcesAsync}
-          onError={this._handleLoadingError}
-          onFinish={this._handleFinishLoading}
-        />
-      );
-    } else {
-      return (
-        <View style={styles.container}>
-          {Platform.OS === 'ios' && <StatusBar barStyle="default" />}
-          <AppNavigator />
-        </View>
-      );
-    }
+import React, { Component } from "react";
+import Expo from "expo";
+import HomeScreen from "./components/HomeScreen/index.js";
+export default class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      isReady: false
+    };
   }
+  async componentWillMount() {
+    await Expo.Font.loadAsync({
+      Roboto: require("native-base/Fonts/Roboto.ttf"),
+      Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf"),
+      Ionicons: require("native-base/Fonts/Ionicons.ttf")
+    });
+    this.setState({ isReady: true });
+  }
+  
+  render() {
+    if (!this.state.isReady) {
+      return <Expo.AppLoading />;
+    }
+    return <HomeScreen />;
+  }
+<<<<<<< HEAD
 
   _loadResourcesAsync = async () => {
     return Promise.all([
@@ -59,3 +57,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
 });
+=======
+}
+>>>>>>> d2a1d9d82dd2f3d3bf41fedb58579b86a144fba1
