@@ -23,8 +23,8 @@ export default class SideBar extends React.Component {
             }}>
             <Image
               square
-              style={{ height: 80, width: 70 }}
-              source={require('../../assets/images/logo.png')}
+              style={{ height: 80, width: 140,}}
+              source={require('../../assets/images/LogoDP2.png')}
             />
             </ImageBackground>
             <View><List
