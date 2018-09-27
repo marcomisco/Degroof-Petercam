@@ -43,7 +43,7 @@ export default class Login extends React.Component {
         <Button style={styles.buton}
           title="Don't have an account? Sign Up"
           onPress={this.createLogin}
-        ><Text>Don't have an account? Sign Up</Text></Button></View>
+        ><Text>Don't have an account? Sign Up</Text></Button></View> 
       </View>
     )
   }
@@ -53,14 +53,15 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor:"green"
+    
   },
   textInput: {
     height: 40,
     width: '90%',
     borderColor: 'gray',
     borderWidth: 1,
-    marginTop: 8
+    marginTop: 8,
+    
   },
   buton: {
     height: 'auto',
@@ -69,5 +70,6 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
     marginTop: 8,
     marginHorizontal: 'auto',
+    backgroundColor: '#62C6BE',
   }
 })
