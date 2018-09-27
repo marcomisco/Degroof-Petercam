@@ -1,5 +1,5 @@
 import React from "react";
-import { AppRegistry, Alert } from "react-native";
+import { AppRegistry, Alert,Image,StyleSheet,View } from "react-native";
 import { Text,
   Container,
   Card,
@@ -33,22 +33,52 @@ export default class EditScreenOne extends React.Component {
     return (
       <Container>
         <Content padder>
-          <Card>
-            <CardItem>
-              <Icon active name="paper-plane" />
-              <Text>Detail Missing</Text>
-              <Right>
-                <Icon name="close" />
-              </Right>
-            </CardItem>
-          </Card>
-          <Button full rounded primary
-            style={{ marginTop: 10 }}
-            onPress={() => this.props.navigation.navigate("Accet")}>
-            <Text>Accept Missing</Text>
-          </Button>
+            <View>
+                <Image
+                        style={styles.image}
+                        source={require('../../assets/images/robot-prod.png')}/>
+                <View>
+                      <View>
+                            <Text>Description Projet</Text>
+                      </View>
+                      <View>
+                            <Text>nom Projet</Text>
+                      </View>
+                      <View>
+                            <Text>région Projet</Text>
+                      </View>
+                      <View>
+                            <View>
+                                  <Text>Comprensif</Text>
+                            </View>
+                            <View>
+                                  <Text>Consciencieux</Text>
+                            </View>
+                            <View>
+                                  <Text>Aimable</Text>
+                            </View>
+                      </View>
+                      <View>
+                            <Text>6H</Text>
+                      </View>
+                </View>
+                <View>
+                      <Text>Drecription de la mission</Text>
+                </View>
+                <View>
+                      <Text>6Hqfefhuc dhf gifeq gd bezfhvu ezf gv fekj ds bsdifq gufea uiaezf hrf orh iurei vrbiuvrbvrui vr  br gvriurvbirevcb jv irebkc brk vrvr kvr rvhbre jcrjbrvkvbb vrbkjesvbvsbrsdkjc  bcdbuedk</Text>
+                </View>
+                <Button full rounded primary
+                  style={{ marginTop: 10 }}
+                  onPress={() => this.props.navigation.navigate("Accet")}>
+                  <Text>Accept Missing</Text>
+                </Button>
+          </View>
         </Content>
       </Container>
     );
   }
 }
+const styles = StyleSheet.create({
+ image:{ height: 200, width: '80%',borderRadius: 30,}
+})

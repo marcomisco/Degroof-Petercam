@@ -1,13 +1,10 @@
 import React from "react";
-import {StyleSheet, AppRegistry, Alert,View, Image } from "react-native";
+import {StyleSheet, AppRegistry, View, Image } from "react-native";
 import { Container, Header, Left, Body, Title, Card, CardItem, Content, Right, Icon, Button, Text } from "native-base";
 import { StackNavigator } from "react-navigation";
 // import EditScreenOne from "./EditScreenOne.js";
 // import EditScreenTwo from "./EditScreenTwo.js";
 export default class Profile extends React.Component {
-  componentDidMount() {
-    Alert.alert("No Users Found", "Oops, Looks like you are not signed in");
-  }
   render() {
     return (
       <Container>
@@ -85,20 +82,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor:"green",
 
-  },
-  textInput: {
-    height: 40,
-    width: '90%',
-    borderColor: 'gray',
-    borderWidth: 1,
-    marginTop: 8
-  },
-  buton: {
-    height: 'auto',
-    width: 'auto',
-    paddingHorizontal: 5,
-    paddingVertical: 5,
-    marginTop: 8,
-    marginHorizontal: 'auto',
   }
 })
