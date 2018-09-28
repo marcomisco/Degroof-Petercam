@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet,TextInput, View} from 'react-native'
+import { StyleSheet,TextInput, View, Image} from 'react-native'
 import {   Button, Text } from "native-base";
 import firebase from 'firebase';
 import { StackNavigator } from "react-navigation";
@@ -18,6 +18,11 @@ export default class Login extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+      <Image
+              square
+              style={{ height: 120, width: 210,}}
+              source={require('../../assets/images/LogoDP2.png')}
+            />
         <Text>Login</Text>
         {this.state.errorMessage &&
           <Text style={{ color: 'red' }}>
@@ -53,7 +58,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor:"green"
   },
   textInput: {
     height: 40,

@@ -2,6 +2,7 @@ import React from "react";
 import { AppRegistry, TextInput,StyleSheet,Image,View,Dimensions } from "react-native";
 import { Container, Card, CardItem, Body, Content, Header, Left, Right, Icon, Title, Button, Text } from "native-base";
 import ProgressBarAnimated from 'react-native-progress-bar-animated';
+import Foot from '../Footer/Footer'
 export default class EditScreenOne extends React.Component {
   state = { message: ''}
   static navigationOptions = ({ navigation }) => ({
@@ -13,7 +14,7 @@ export default class EditScreenOne extends React.Component {
           </Button>
         </Left>
         <Body>
-          <Title>Accept Missing</Title>
+          <Title>Après Missing</Title>
         </Body>
         <Right />
       </Header>
@@ -26,14 +27,14 @@ export default class EditScreenOne extends React.Component {
         <Content padder>
         <Image 
                         style={styles.image}
-                        source={require('../../assets/images/robot-prod.png')}/>
+                        source={require('../../assets/images/Missing1.png')}/>
           <Card>
           <View>
                       <View>
-                            <Text>Description Projet</Text>
+                            <Text>Nom Projet</Text>
                       </View>
                       <View>
-                            <Text>nom Projet</Text>
+                            <Text>Aquel point cette expérience m'a été enrichissante ?</Text>
                       </View>
                       <Content>
                       <ProgressBarAnimated
@@ -42,20 +43,25 @@ export default class EditScreenOne extends React.Component {
             backgroundColorOnComplete="#6CC644"
           />
                       </Content>
-                      <TextInput
+                      
+                </View><View style={styles.aligne}>
+                <TextInput
                           style={styles.textInput}
                           autoCapitalize="none"
                           placeholder=""
                           onChangeText={message => this.setState({ message })}
                           value={this.state.message}
                         />
-                </View>
-                <Button style={styles.buton}
-          title="Don't have an account? Sign Up"
-        ><Text>Don't have an account? Sign Up</Text></Button>
+                <View><Button style={styles.buton} 
+          title="Valider"
+        ><Text style={styles.while}>Valider</Text></Button></View>
+        
+        </View>
+
           </Card>
           
         </Content>
+        <Foot/>
       </Container>
     );
   }
@@ -74,6 +80,13 @@ const styles = StyleSheet.create({textInput: {
     paddingHorizontal: 5,
     paddingVertical: 5,
     marginTop: 8,
-    marginHorizontal: 'auto',
-  }
+    
+  },aligne: {
+    flex: 1,
+    height: '95%',
+    width:'100%',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },while:{color:"#fff"}
+
  })

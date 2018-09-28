@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, TextInput, View, Button } from 'react-native'
+import { StyleSheet, Text, TextInput, View, Button, Image } from 'react-native'
 import { StackNavigator } from "react-navigation";
 import firebase from 'firebase';
 import  base  from '../../firebase'
@@ -16,6 +16,11 @@ handleSignUp = () => {
 render() {
     return (
       <View style={styles.container}>
+      <Image
+              square
+              style={{ height: 120, width: 210,}}
+              source={require('../../assets/images/LogoDP2.png')}
+            />
         <Text>Sign Up</Text>
         {this.state.errorMessage &&
           <Text style={{ color: 'red' }}>

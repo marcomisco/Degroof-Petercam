@@ -15,7 +15,7 @@ export default class SideBar extends React.Component {
     return (
       <Container>
         <Content>
-        <ImageBackground source={require('../../assets/images/drawer-cover.png')} style={{
+        <ImageBackground source={require('../../assets/images/Gradient.png')} style={{
               height: 120,
               alignSelf: "stretch",
               justifyContent: "center",

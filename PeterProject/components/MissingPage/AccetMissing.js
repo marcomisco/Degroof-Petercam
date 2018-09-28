@@ -1,5 +1,6 @@
 import React from "react";
 import { AppRegistry, Alert,StyleSheet,Image,View } from "react-native";
+import Foot from '../Footer/Footer'
 import { Container, Card, CardItem, Body, Content, Header, Left, Right, Icon, Title, Button, Text } from "native-base";
 export default class EditScreenOne extends React.Component {
   static navigationOptions = ({ navigation }) => ({
@@ -23,7 +24,7 @@ export default class EditScreenOne extends React.Component {
         <Content padder>
         <Image 
                         style={styles.image}
-                        source={require('../../assets/images/robot-prod.png')}/>
+                        source={require('../../assets/images/Missing1.png')}/>
           <Card>
           <View>
                       <View>
@@ -36,6 +37,9 @@ export default class EditScreenOne extends React.Component {
                             <Text>région Projet</Text>
                       </View>
                       <View>
+                            <Text>Date de Mission</Text>
+                      </View>
+                      <View>
                             <View>
                                   <Text>Comprensif</Text>
                             </View>
@@ -44,6 +48,19 @@ export default class EditScreenOne extends React.Component {
                             </View>
                             <View>
                                   <Text>Aimable</Text>
+                            </View>
+                      </View>
+                      <View>
+                            <Text>Adresse :</Text>
+                      </View>
+                      <View style={styles.aligneR}> 
+                            <View>
+                                  <Text>Adresse</Text>
+                            </View>
+                            <View>
+                            <Image 
+                        style={styles.image2}
+                        source={require('../../assets/images/map.png')}/>
                             </View>
                       </View>
                       <View>
@@ -63,10 +80,26 @@ export default class EditScreenOne extends React.Component {
                   <Text>Après Missing</Text>
                 </Button>
         </Content>
+        <Foot/>
       </Container>
     );
   }
 }
 const styles = StyleSheet.create({
-  image:{ height: 200, width: '80%',borderRadius: 30,}
+  image:{ height: 200, width: '80%',borderRadius: 30,},
+  image2:{ height: 80, width: 140,borderRadius: 30,},
+  aligneR: {
+    flex: 1,flexDirection:"row",
+    height: '95%',
+    width:'100%',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+  },
+  aligneV: {
+    flex: 1,flexDirection:"column",
+    height: '95%',
+    width:'100%',
+    justifyContent: 'center',
+    alignItems: 'center',
+  }
  })

@@ -13,6 +13,7 @@ import { Text,
   Title,
   Button,
   H1 } from "native-base";
+  import Foot from '../Footer/Footer'
 export default class EditScreenOne extends React.Component {
   static navigationOptions = ({ navigation }) => ({
     header: (
@@ -36,7 +37,7 @@ export default class EditScreenOne extends React.Component {
             <View>
                 <Image
                         style={styles.image}
-                        source={require('../../assets/images/robot-prod.png')}/>
+                        source={require('../../assets/images/Missing1.png')}/>
                 <View>
                       <View>
                             <Text>Description Projet</Text>
@@ -75,6 +76,7 @@ export default class EditScreenOne extends React.Component {
                 </Button>
           </View>
         </Content>
+        <Foot/>
       </Container>
     );
   }

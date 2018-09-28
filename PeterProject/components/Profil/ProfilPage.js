@@ -2,8 +2,7 @@ import React from "react";
 import {StyleSheet, AppRegistry, View, Image } from "react-native";
 import { Container, Header, Left, Body, Title, Card, CardItem, Content, Right, Icon, Button, Text } from "native-base";
 import { StackNavigator } from "react-navigation";
-// import EditScreenOne from "./EditScreenOne.js";
-// import EditScreenTwo from "./EditScreenTwo.js";
+import Foot from '../Footer/Footer'
 export default class Profile extends React.Component {
   render() {
     return (
@@ -46,6 +45,7 @@ export default class Profile extends React.Component {
             
           </Card></View>
         </Content>
+        <Foot/>
       </Container>
     );
   }
@@ -79,8 +79,7 @@ const styles = StyleSheet.create({
     height: '95%',
     width:'100%',
     justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor:"green",
+    alignItems: 'center'
 
   }
 })

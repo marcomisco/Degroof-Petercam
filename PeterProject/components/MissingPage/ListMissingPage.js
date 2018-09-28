@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet,AppRegistry, View, Image } from "react-native";
 import { Container, Header, Left, Body, Title, Card, CardItem, Content, Right, Icon, Button, Text } from "native-base";
 import { StackNavigator } from "react-navigation";
-
+import Foot from '../Footer/Footer'
 // import EditScreenTwo from "./EditScreenTwo.js";
 export default class Profile extends React.Component {
   render() {
@@ -16,7 +16,7 @@ export default class Profile extends React.Component {
               <View>
                 <Image image
                   style={styles.image}
-                  source={require('../../assets/images/robot-prod.png')}/>
+                  source={require('../../assets/images/Missing1.png')}/>
               </View>
               <View style={styles.aligneV}>
                         <View>
@@ -62,7 +62,7 @@ export default class Profile extends React.Component {
               <View>
                 <Image 
                   style={styles.image}
-                  source={require('../../assets/images/robot-prod.png')}/>
+                  source={require('../../assets/images/Missing2.png')}/>
               </View>
               <View style={styles.aligneV}>
                         <View>
@@ -108,7 +108,7 @@ export default class Profile extends React.Component {
               <View>
                 <Image 
                   style={styles.image}
-                  source={require('../../assets/images/robot-prod.png')}/>
+                  source={require('../../assets/images/Missing3.png')}/>
               </View>
               <View style={styles.aligneV}>
                         <View>
@@ -154,7 +154,7 @@ export default class Profile extends React.Component {
               <View>
                 <Image 
                   style={styles.image}
-                  source={require('../../assets/images/robot-prod.png')}/>
+                  source={require('../../assets/images/Missing4.png')}/>
               </View>
               <View style={styles.aligneV}>
                         <View>
@@ -198,6 +198,7 @@ export default class Profile extends React.Component {
           
           
         </Content>
+        <Foot/>
       </Container>
     );
   }
@@ -211,7 +212,7 @@ Profile.navigationOptions = ({ navigation }) => ({
         </Button>
       </Left>
       <Body>
-        <Title>Missing</Title>
+        <Title>Liste des Missions</Title>
       </Body>
       <Right />
     </Header>
@@ -230,8 +231,7 @@ const styles = StyleSheet.create({
     height: '95%',
     width:'100%',
     justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor:"green",
+    alignItems: 'center'
 
   },
   aligneR: {
