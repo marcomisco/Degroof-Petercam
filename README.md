@@ -1,8 +1,12 @@
 # Degroof-Petercam
 
-## Bienvenue sur notre Peter Project
+## Bienvenue sur Peter Project
 
 Notre appli à pour but de connecter les compétences des employés de Petercam avec des projet de mentoring, coaching et bénévola
+
+
+![alt text](https://contattafiles.s3.us-west-1.amazonaws.com/tnt14094/-h4VjOHFvkGTPW8/iPhone%206-7-8%20%E2%80%93%202.png)
+
 
 ## TEAM
 
@@ -21,3 +25,4 @@ Notre appli à pour but de connecter les compétences des employés de Petercam 
 * Javascript
 * Bootstrap
 * React Native
+
