@@ -23,6 +23,5 @@ Notre appli à pour but de connecter les compétences des employés de Petercam 
 * Html
 * CSS
 * Javascript
-* Bootstrap
 * React Native
-
+* NPM
