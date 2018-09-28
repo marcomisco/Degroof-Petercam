@@ -22,8 +22,6 @@ Cette apllication contiendra une page:
 * [**Marco Bove**](https://github.com/marcomisco)
 * [**Guillaume Kreit**](https://github.com/Guillaume-Kreit)
 
-
-
 ##  Outils 
 
 * Html
