@@ -29,6 +29,5 @@ Cette apllication contiendra une page:
 * Html
 * CSS
 * Javascript
-* Bootstrap
 * React Native
 * Firebase
